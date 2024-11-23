@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="nanyappp.MainPage"
+    BackgroundColor="#F7E5F6">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="20">
+
+      
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <BoxView WidthRequest="10" HeightRequest="10" BackgroundColor="#FFFFFF" CornerRadius="5" />
+            <BoxView WidthRequest="10" HeightRequest="10" BackgroundColor="#DDDDDD" CornerRadius="5" Margin="5,0" />
+            <BoxView WidthRequest="10" HeightRequest="10" BackgroundColor="#DDDDDD" CornerRadius="5" />
+        </HorizontalStackLayout>
+
+        
+        <Frame BackgroundColor="#EFC9F5"
+               CornerRadius="150"
+               HeightRequest="250"
+               WidthRequest="250"
+               HorizontalOptions="Center">
+            <Image Source="nanyappp.png" Aspect="AspectFill" />
+        </Frame>
+
+        
+        <Label Text="NANY"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               TextColor="#FF33AA" />
+        <Label Text="ITEMS FOR CHILDREN"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               TextColor="#5B5B5B" />
+
+        
+        <Frame CornerRadius="25" HeightRequest="60" BackgroundColor="#FFFFFF" BorderColor="#FF33AA" Padding="10" WidthRequest="300">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="icon_nanyap.png" WidthRequest="25" HeightRequest="25" />
+                <Entry Placeholder="Email or Phone" FontSize="16" TextColor="#333333" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        
+        <Frame CornerRadius="25" HeightRequest="60" BackgroundColor="#FFFFFF" BorderColor="#FF33AA" Padding="10" WidthRequest="300">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="iconnn_nanyap.png" WidthRequest="25" HeightRequest="25" />
+                <Entry Placeholder="Password" FontSize="16" IsPassword="True" TextColor="#333333" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        
+        <Button Text="Forgot Password?"
+                BackgroundColor="#FF33AA"
+                TextColor="#FFFFFF"
+                HeightRequest="50"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                WidthRequest="300" />
+
+       
+        <Label Text="or"
+               FontSize="14"
+               HorizontalTextAlignment="Center"
+               TextColor="#5B5B5B" />
+
+        
+        <Button Text="Create an account"
+                BackgroundColor="#FFFFFF"
+                TextColor="#FF33AA"
+                BorderColor="#FF33AA"
+                BorderWidth="2"
+                HeightRequest="50"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                WidthRequest="300" />
+    </VerticalStackLayout>
+</ContentPage>
